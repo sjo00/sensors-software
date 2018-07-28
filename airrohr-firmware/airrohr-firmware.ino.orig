@@ -96,7 +96,13 @@
  *
 /************************************************************************/
 // increment on change
+<<<<<<< HEAD
+#define SOFTWARE_VERSION "NRZ-2018-104-B2"
+||||||| merged common ancestors
+#define SOFTWARE_VERSION "NRZ-2018-104-B1"
+=======
 #define SOFTWARE_VERSION "NRZ-2018-104-B11"
+>>>>>>> upstream/beta
 
 /*****************************************************************
 /* Includes                                                      *
@@ -3384,13 +3390,20 @@ void display_values() {
 /* Init OLED display                                             *
 /*****************************************************************/
 void init_display() {
-	if (has_display) {
-		display.init();
-		display.resetDisplay();
-		display.setFont(Roboto_Mono_9);
-		display_sh1106.init();
-		display_sh1106.setFont(Roboto_Mono_9);
-	}
+<<<<<<< HEAD
+        if (has_display) {
+            display.init();
+            display.resetDisplay();
+        }
+||||||| merged common ancestors
+	display.init();
+	display.resetDisplay();
+=======
+	display.init();
+	display.setFont(Roboto_Mono_9);
+	display_sh1106.init();
+	display_sh1106.setFont(Roboto_Mono_9);
+>>>>>>> upstream/beta
 }
 
 /*****************************************************************
